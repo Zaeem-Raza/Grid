@@ -1,0 +1,36 @@
+html{
+    font-size: 22px;
+    background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+    border-radius: 50%;
+}
+body{
+    padding: 2rem;
+}
+.card{
+    background-color: burlywood;
+    color: aliceblue;
+    padding: 1rem;
+    height :4rem;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+.cards{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+
+}
+@media (min-width:600px){
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media( min-width:900px){
+    .cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
